@@ -1,22 +1,43 @@
-# Microclimate Sensor Data Wrangling
+# Microclimate Sensor Data Analysis
 
-By Zenith Anthony Dabarera. SIT720 Machine Learning coursework.
+Prepare noisy environmental sensor readings for exploratory analysis.
 
-City of Melbourne microclimate sensor data cleaning and exploration.
+**Python · pandas · matplotlib · data wrangling**
 
-## Files
+## Project at a glance
+
+Work in progress: the uploaded notebook contains no saved execution outputs. Final sensor rankings and numerical findings are not claimed.
+
+## Technical work
+
+- Missing-value investigation
+- PM2.5 and PM10 exploration
+- Coordinate parsing and data quality checks
+- Min–max scaling and exploratory summaries
+
+## Explore the evidence
 
 - [SIT720_2_1P_Data_Wrangling.ipynb](SIT720_2_1P_Data_Wrangling.ipynb)
 - [SIT720_2_1P_Report.pdf](SIT720_2_1P_Report.pdf)
 
-## Execution status
+## Run locally
 
-0 of 11 code cells have stored execution counts. Original notebook outputs are preserved; this publication did not rerun experiments. The notebook and pre-run report remain work in progress.
+```bash
+python -m venv .venv
+# Activate the environment, then:
+python -m pip install jupyter numpy pandas matplotlib scikit-learn
+jupyter notebook
+```
 
-## Running
+Supply microclimate-sensors-data.csv or use the configured City of Melbourne download route in the notebook.
 
-Open the notebook in Jupyter or Google Colab and follow its dataset-loading instructions. Install the packages imported in the notebook. Input datasets may require separate download.
+Open the linked notebook and run the cells in order. Package names reflect the source imports; a fresh environment was not tested during this documentation update. Dataset downloads require internet access.
 
-## Scope
+## Limitations and status
 
-Educational experiments; no production or clinical validation is claimed. The uploaded notebooks and reports determine the actual project scope, which may differ from older assessment briefs.
+Missing-data decisions, sensor coverage and units need checking against the actual input and completed outputs.
+
+The notebook is unexecuted; see the report for the intended analysis.
+
+**Author:** Zenith Anthony Dabarera · SIT720 Machine Learning  
+[AI/ML portfolio](https://github.com/Zenith1997)
